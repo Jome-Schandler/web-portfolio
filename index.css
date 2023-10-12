@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;   
+    /* font-family: 'Roboto', sans-serif;   */
+}
+/* Background colors */
+.bg-body {
+  /* background: linear-gradient(45deg, #252525, #0f0f0f); */
+  /* background: linear-gradient(to bottom, #333, #fff); */
+  background: linear-gradient(to left, #242947, #686778);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.bg-nav {
+  background: linear-gradient(to right, #242947, #686778);
+  animation: gradientAnimation 15s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pixelify {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* CSS for Landing Page Start */
+  /* For laptop view */
+  @media (min-width: 1024px) {
+    .bg-landing {
+      min-height: 100vh; /* Set the minimum height for the background */
+      background-color: gray;
+      background-image:  url(./images/Mypics/bg-for-landing.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed ;
+    }
+
+    .container-bg-landing {
+      min-height: 100vh; /* Set the minimum height for the container */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-title {
+      font-size: 5em;
+      line-height: 10rem;
+    }
+  }
+
+  /* For tablet view */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .bg-landing {
+      min-height: 35vh; /* Adjust the background height as needed */
+      background-color: gray;
+      background-image:  url(./images/Mypics/bg-for-landing.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed ;
+    }
+
+    .container-bg-landing {
+      min-height: 35vh; /* Adjust the container height as needed */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-title {
+      font-size: 3em; /* Adjust font size */
+      line-height: 5rem; /* Adjust line height */
+    }
+
+    .nav-ul {
+      color:#333;
+    }
+  }
+
+  /* For phone view */
+  @media (max-width: 767px) {
+    .bg-landing {
+      min-height: 50vh; /* Adjust the background height as needed */
+      background-size: cover; /* Adjust the background size */
+      background-color: gray;
+      background-image:  url(./images/Mypics/bg-for-landing.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed ;
+    }
+
+    .container-bg-landing {
+      min-height: 50vh; /* Adjust the container height as needed */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-title {
+      font-size: 2em; /* Adjust font size */
+      line-height: 3.5rem; /* Adjust line height */
+    }
+  }
+/* CSS For Landing Page End */
+
+/* Button to be used Start  */
+.button-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    position: relative;
+    padding: 0 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: hsla(210, 22%, 9%, 0.634) 7px 7px 7px 7px;
+    background-color: hsla(0, 0%, 67%, 0.083);
+    border-radius: var(--bs-border-radius-xl) !important;
+    overflow: hidden;
+    transition: 31ms cubic-bezier(.5, .7, .4, 1);
+   }
+   
+   .button-home:before {
+    content: attr(alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+    opacity: 1;
+   }
+   
+   .button-home:active {
+    box-shadow: none;
+    transform: translateY(7px);
+    transition: 35ms cubic-bezier(.5, .7, .4, 1);
+   }
+   
+   .button-home:hover:before {
+    transition: all .0s;
+    transform: translateY(100%);
+    opacity: 0;
+   }
+   
+   .button-home i {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-style: normal;
+    transition: all 2s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+
+   /* For phone view Landing */
+  @media (max-width: 767px) {
+    .button-home i {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-style: normal;
+      transition: all 2s ease;
+      transform: translateY(-20px);
+      opacity: 0;
+      padding-left: 0;
+      padding-right: 0;
+     }
+  }
+
+   .button-home:hover i {
+    transition: all .2s ease;
+    transform: translateY(0px);
+    opacity: 1;
+   }
+   
+   .button-home:hover i:nth-child(1) {
+    transition-delay: 0.045s;
+   }
+   
+   .button-home:hover i:nth-child(2) {
+    transition-delay: calc(0.045s * 3);
+   }
+   
+   .button-home:hover i:nth-child(3) {
+    transition-delay: calc(0.045s * 4);
+   }
+   
+   .button-home:hover i:nth-child(4) {
+    transition-delay: calc(0.045s * 5);
+   }
+   
+   .button-home:hover i:nth-child(5) {
+    transition-delay: calc(0.045s * 6);
+   }
+   
+   .button-home:hover i:nth-child(6) {
+    transition-delay: calc(0.045s * 7);
+   }
+/* Button to be used end */
+
+/* About Education Start */
+ /* For laptop view */
+ @media (min-width: 1024px) {
+   .about-educ-desc {
+    line-height: 2rem;
+    height: 100vh;
+  }
+}
+
+/* For tablet view */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #educ-desc {
+      display: none;
+  }
+}
+
+/* For phone view */
+@media (max-width: 767px) {
+  
+}
+/* About Education End */
+
+
+
+
+/* CSS for Ministry Page Start***************************************** */
+  /* For laptop view */
+
+  @media (min-width: 1024px) {
+
+    .bg-ministry {
+      min-height: 100vh; /* Set the minimum height for the background */
+      background-color: gray;
+      background-image:  url(./images/Mypics/ministry.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed ;
+      border-radius: var(--bs-border-radius-xl) !important;
+    }
+
+    .container-bg-ministry {
+      min-height: 100vh; /* Set the minimum height for the container */
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: var(--bs-border-radius-xl) !important;
+    }
+
+    .text-ministry {
+      font-size: 1.5em;
+      line-height: 35px;
+      padding-top: 1rem;
+    }
+  }
+
+  /* For tablet view */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .bg-ministry {
+      min-height: 35vh; /* Adjust the background height as needed */
+      background-color: gray;
+      background-image:  url(./images/Mypics/ministry.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .container-bg-ministry {
+      min-height: 35vh; /* Adjust the container height as needed */
+      background-color: rgba(0, 0, 0, 0.5);
+      border-bottom-right-radius: var(--bs-border-radius-xl) !important;
+      border-bottom-left-radius: var(--bs-border-radius-xl) !important;
+    }
+
+    .text-ministry {
+      font-size: 15px; /* Adjust font size */
+      line-height: 1rem; /* Adjust line height */
+    }
+  }
+
+  /* For phone view */
+  @media (max-width: 767px) {
+    .bg-ministry {
+      min-height: 50vh; /* Adjust the background height as needed */
+      background-size: cover; /* Adjust the background size */
+      background-color: gray;
+      background-image:  url(./images/Mypics/ministry.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .container-bg-ministry {
+      min-height: 50vh; /* Adjust the container height as needed */
+      background-color: rgba(0, 0, 0, 0.5);
+      border-bottom-right-radius: var(--bs-border-radius-xl) !important;
+      border-bottom-left-radius: var(--bs-border-radius-xl) !important;
+    }
+
+    .bg-title {
+      font-size: 2em; /* Adjust font size */
+      line-height: 3.5rem; /* Adjust line height */
+    }
+  }
+/* CSS For Ministry Page End **************************************** */
+
+/* CSS for Nav */
+.w-15 {
+  width: 15% !important;
+}
+ 
+/* CSS for About */
+#educ-desc ul li {
+    text-decoration: none;
+}
+
+/* CSS for tools */
+.card {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(-45deg, #4b5076 0%, #979aac 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);    
+    max-width: 100%;
+  }
+  
+  .card img {
+    width: auto;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 252, 252, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 5px 0 0;
+    font-size: 17px;
+    color: #2f3454;
+    line-height: 1.4;
+  }
+
+  .card__quote {
+    color: #d5d8ea;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .card:hover > img {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* Tool */
+
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Video Frame */
+.video-frame {
+  flex: 1;
+  position: relative;
+  width: 45%; /* Adjust the width as needed */
+  padding-bottom: 0; /* Remove inline style */
+  overflow: hidden;
+  margin-right: 5px; /* Add spacing between the videos */
+}
+
+/* Video Iframe */
+.vid-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 177%;
+}
+
+/* tools / skills carousel Start */
+
+/* tools / skills carousel End */
