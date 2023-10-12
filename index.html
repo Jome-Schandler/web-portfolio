@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
     <title>Jome Schandler</title>
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -18,16 +18,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pixelify+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   </head>
 
   <body class="bg-body">
 
-    <section id="landing" class="montserrat">
+    <section id="landing" class="Montserrat-Subrayada">
         <div id="home" class="bg-landing">
             <div class="container-bg-landing text-white d-grid justify-content-center text-center">
                 <div class="bg-title">Jome Schandler</div>
                 <div>
-                    <a href="#about" class="button-home p-5 gap-5 pixelify">
+                    <a href="#about" class="button-home p-5 pixelify">
                         <i>F</i>
                         <i>U</i>
                         <i>T</i>
@@ -42,48 +46,47 @@
     </section>
 
     <header class="sticky-top montserrat">
-        <!-- Navbar Section Start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-nav rounded-bottom-4">
-            <!-- Nav logo left Start -->
-           <a class="navbar-brand text-light" href="#">JOME</a>
-           <!-- <img src="images/Mypics/jomelogo.png" alt="MyLogo" class="image-fluid w-15 ms-3"> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Nav logo left End -->
-            <!-- Navs right Start -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul id="nav-ul" class="navbar-nav ml-auto gap-3">
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="#about">About Me <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#tools">Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#contacts">Contacts</a>
-                </li>
-                </ul>
-            </div>
-            <!-- Navs right End -->
-        </nav>
-        <!-- Navbar Section End -->
+  <!-- Navbar Section Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-nav rounded-bottom-4 Montserrat-Subrayada">
+  <!-- Nav logo left Start -->
+  <a class="navbar-brand text-light me-1" href="#">JOME</a>
+  <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navs right Start -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="nav-ul" class="navbar-nav ml-auto gap-3">
+          <li class="nav-item active">
+              <a class="nav-link text-light" href="#about">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-light" href="#tools">Tools</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-light" href="#contacts">Contacts</a>
+          </li>
+      </ul>
+  </div>
+  <!-- Navs right End -->
+  </nav>
+  <!-- Navbar Section End -->
+
     </header>
     <!-- About Section Start -->
-    <section id="about" class="montserrat container-fluid">
-        <div id="education" class="row">
+      <section id="about" class="montserrat container-fluid">
+        <div id="education" class="row pt-5 mt-5">
             <div id="educ-img" class="about-educ-desc col-md-6 col-sm-12 order-md-1 order-sm-2">
                 <img src="./images/Mypics/about-me-img.png" alt="This is me!" class="w-75 ms-5 rounded-5">
             </div>
-            <div id="educ-desc" class="about-educ-desc col-md-6 col-sm-12 order-md-2 order-sm-1">
-                <ul class="about-educ-desc text-center fs-5 list-unstyled text-white">
-                    <li>I proudly graduated in June 2023 from Bulacan State University's main campus, earning a Bachelor's degree in Information Technology with a specialization in Web and Mobile Application Development.</li>
-                    <li>My proficiency extends to a range of programming languages, underpinned by a strong grasp of fundamental programming concepts such as algorithms, data structures, and problem-solving techniques.</li>
-                    <li>Armed with exceptional communication skills, a commanding leadership presence, and unwavering motivation, I excel in collaborative environments, working seamlessly with team members to successfully achieve project goals.</li>
-                    <li>Furthermore, my commitment to results-oriented, hands-on strategies ensures the efficient accomplishment of company objectives. I possess a sound understanding of front office duties and responsibilities, coupled with the agility to swiftly adapt to and utilize new computer software.</li>
+            <div id="educ-desc" class="about-educ-desc col-md-6 col-sm-12 order-md-2 order-sm-1 d-flex align-items-center pt-3">
+                <ul class="about-educ-desc fs-5 list-unstyled text-white text-center">
+                    <li class="text-justify pb-3">Graduated in June 2023 from Bulacan State University's main campus, earning a Bachelor's degree in Information Technology with a specialization in Web and Mobile Application Development.</li>
+                    <li class="text-justify pb-3">My proficiency extends to a range of programming languages, underpinned by a strong grasp of fundamental programming concepts such as algorithms, data structures, and problem-solving techniques.</li>
+                    <li class="text-justify pb-3">Armed with exceptional communication skills, a commanding leadership presence, and unwavering motivation, I excel in collaborative environments, working seamlessly with team members to successfully achieve project goals.</li>
+                    <li class="text-justify">Furthermore, my commitment to results-oriented, hands-on strategies ensures the efficient accomplishment of company objectives. I possess a sound understanding of front office duties and responsibilities, coupled with the agility to swiftly adapt to and utilize new computer software.</li>
                 </ul>
             </div>
         </div>    
@@ -92,11 +95,11 @@
             <div class="container-bg-ministry text-white text-center container-fluid">
                 <div class"row">
                     <div class="col-lg-6">
-                        <ul id="ul-ministry" class="text-center fs-5 list-unstyled text-white pt-lg-5 mt-3 w-100">
-                            <li>In addition to my passion for web development, I am a devoted leader at our Christian church. Within the Liturgy, Arts, and Music (LAM) ministry, I have the privilege of leading Praise and Worship as a Lead Guitarist, using instruments to glorify the one and only Creator. </li>
-                            <li>I also take on the role of a Cell Leader, guiding a diverse group of disciples on their spiritual journey.</li>
-                            <li>Recently, I was honored to be elected as the Vice President of the Young Adults group at our church, further contributing to the spiritual growth and development of our community.</li>
-                            <li>I firmly believe that the leadership skills I've cultivated through my active roles within our church community can be seamlessly applied to the corporate world. These experiences have honed my ability to lead projects, effectively manage teams, unlock the hidden potentials within a group, and ultimately contribute to the successful realization of projects, both in a spiritual and professional context.</li>
+                        <ul id="ul-ministry" class="text-center fs-5 list-unstyled text-white py-lg-3 w-100">
+                            <li class="text-justify pb-3">In addition to my passion for web development, I am a devoted leader at our Christian church. Within the Liturgy, Arts, and Music (LAM) ministry, I have the privilege of leading Praise and Worship as a Lead Guitarist, using instruments to glorify the one and only Creator. </li>
+                            <li class="text-justify pb-3">I also take on the role of a Cell Leader, guiding a diverse group of disciples on their spiritual journey.</li>
+                            <li class="text-justify pb-3">Recently, I was honored to be elected as the Vice President of the Young Adults group at our church, further contributing to the spiritual growth and development of our community.</li>
+                            <li class="text-justify">I firmly believe that the leadership skills I've cultivated through my active roles within our church community can be seamlessly applied to the corporate world. These experiences have honed my ability to lead projects, effectively manage teams, unlock the hidden potentials within a group, and ultimately contribute to the successful realization of projects, both in a spiritual and professional context.</li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -105,14 +108,16 @@
                 </div>
             </div>
         </div>
-    </section>
-<!-- About Section End -->
+      </section>
+    <!-- About Section End -->
 
 <!-- Project Start -->
+  <!-- project 1 Start -->
   <section id="projects">
         <div class="container text-center">
-            <h1 class="text-center mt-5 mb-2 text-white">Projects</h1>
-            <div class="row mt-2 pt-3">
+            <h1 class="text-center mt-5 text-white Montserrat-Subrayada">Projects</h1>
+            <h4 class="text-center text-white p-4">click on any images to see details of the project </h4>
+            <div class="row mt-2 py-5">
               <!-- Modal project1 Start -->
                 <div class="col-md-4 mb-3" data-toggle="modal" data-target="#modal1">
                     <img src="images/projects/capstes.jpg" class="img-fluid proj h-100">
@@ -189,10 +194,11 @@
           </div>
         </div>
   </section>
-  <!-- project 2 -->
+  <!-- project 1 End -->
+  <!-- project 2 Start -->
   <section id="projects2">
     <div class="container text-center">
-        <div class="row mt-2 pt-3">
+        <div class="row mt-2 pb-5">
           <!-- Modal project4 Start -->
             <div class="col-md-4 mb-3" data-toggle="modal" data-target="#modal4">
                 <img src="images/projects/router-pl-ar.png" class="img-fluid proj h-100">
@@ -268,8 +274,8 @@
         <!-- Modal project6 End -->
       </div>
     </div>
-</section>
-  <!-- project 2 -->
+  </section>
+  <!-- project 2 End -->
 <!-- Project End -->
 
 <!-- Video Container Start -->
@@ -295,15 +301,19 @@
 </section>
 <!-- Video Container End -->
 
-<div id="disclaimer" class="text-center text-secondary">
-    <h5 class="py-3 px-3">Note: I added some of a group work here, just for the purposes of this capstone 1 to have an additional content in my portfolio.</h5>
+<div id="disclaimer" class="text-center text-secondary p-5">
+    <h5 class="">Note: I added some of a group work here, just for the purposes of this capstone 1 to have an additional content in my portfolio.</h5>
 </div>
 
-
     <!-- Tool Start -->
-    <section id="tools" class="">
-        <!-- Card Skills carousel Start -->
-        <div id="continuous-slider" class="carousel slide w-25 p-3" data-ride="carousel">
+  <section id="tools" class="container-fluid py-5">
+    <h2 class="Montserrat-Subrayada text-light text-center">Tools & SKill Summary</h2>
+    <h5 class="text-light text-center">Hover on each icon to see skill summary</h5>
+    <div class="row py-5">
+    <!-- Skills Web Dev Start -->
+      <div id="skills-web" class="col-md-6 py-5">
+        <h2 class="text-light text-center Montserrat-Subrayada">Web Development</h2>
+        <div id="continuous-slider" class="carousel slide p-3" data-ride="carousel">
             <div class="carousel-inner">
                 <!-- Card content 1 Start -->
                     <div class="carousel-item active">
@@ -361,43 +371,481 @@
                             </div>
                         </div>
                     </div>
-                <!-- Card content 5 End -->
+                <!-- Card content 4 End -->
+                <!-- Card content 5 Start -->
+                <div class="carousel-item">
+                  <div id="php" class="d-flex justify-content-center align-items-center">
+                      <div class="card text-center">
+                          <img width="150" src="images/logo/webdev/logo-php.png"/>
+                          <div class="card__content">
+                          <p class="card__title">PHP</p>
+                          <p class="card__description fw-bold">60%</p>
+                          <p class="card__quote">"A perfect engineer to apply design in our house easily!"</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- Card content 5 End -->
+           <!-- Card content 6 Start -->
+           <div class="carousel-item">
+            <div id="angular" class="d-flex justify-content-center align-items-center">
+                <div class="card text-center">
+                    <img width="150" src="images/logo/webdev/logo-angular.png"/>
+                    <div class="card__content">
+                    <p class="card__title">Angular</p>
+                    <p class="card__description fw-bold">50%</p>
+                    <p class="card__quote">"Just as a compass points the way, this guides us in creating robust web applications."</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- Card content 6 End -->
+        
             </div>
                 <a class="carousel-control-prev" href="#continuous-slider" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#continuous-slider" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div>
+      </div>
+      <!-- Skills Web Dev end -->
+
+      <!-- Skills Programming Start -->
+      <div id="skills-programming" class="col-md-6 py-5">
+        <h2 class="text-light text-center Montserrat-Subrayada">Programming</h2>
+        <div id="continuous-slider" class="carousel slide p-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Card content 1 Start -->
+                    <div class="carousel-item active">
+                        <div id="c++" class="d-flex justify-content-center align-items-center">
+                            <div class="card text-center">
+                                <img width="150" src="images/logo/prog/logo-c++.png"/>
+                                <div class="card__content">
+                                    <p class="card__title">C++</p>
+                                    <p class="card__description fw-bold">60%</p>
+                                    <p class="card__quote">"A powerful foundation for high-performance applications!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Card content 1 End -->
+                <!-- Card content 2 Start -->
+                <div class="carousel-item">
+                <div id="java" class="d-flex justify-content-center align-items-center">
+                    <div class="card text-center">
+                        <img width="150" src="images/logo/prog/logo-java.png"/>
+                        <div class="card__content">
+                        <p class="card__title">Java</p>
+                        <p class="card__description fw-bold">70%</p>
+                        <p class="card__quote">"A Universal bridge that connects cultures in the digital realm."</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <!-- Card content 2 End -->
+            <!-- Card content 3 Start -->
+            <div class="carousel-item">
+            <div id="python" class="d-flex justify-content-center align-items-center">
+              <div class="card text-center">
+                  <img width="150" src="images/logo/prog/logo-python.png"/>
+                  <div class="card__content">
+                  <p class="card__title">Python</p>
+                  <p class="card__description fw-bold">40%</p>
+                  <p class="card__quote">"Its simplicity is akin to everyday conversation - the language of problem solving."</p>
+                  </div>
+              </div>
+            </div>
+           </div>
+          <!-- Card content 3 End -->
+           <!-- Card content 4 Start -->
+           <div class="carousel-item">
+            <div id="csharp" class="d-flex justify-content-center align-items-center">
+              <div class="card text-center">
+                  <img width="150" src="images/logo/prog/logo-csharp.png"/>
+                  <div class="card__content">
+                  <p class="card__title">C#</p>
+                  <p class="card__description fw-bold">20%</p>
+                  <p class="card__quote">"The architect's blueprint for building interactive software that connects with users."</p>
+                  </div>
+              </div>
+            </div>
+           </div>
+          <!-- Card content 4 End -->
+            </div>
+                <a class="carousel-control-prev" href="#continuous-slider" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#continuous-slider" role="button" data-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+      </div> 
+      <!-- Skills Programming End -->
+
+       <!-- Skills Database Start -->
+       <div id="skills-database" class="col-md-6 py-5">
+        <h2 class="text-light text-center Montserrat-Subrayada">Database</h2>
+        <div id="continuous-slider" class="carousel slide p-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Card content 1 Start -->
+                    <div class="carousel-item active">
+                        <div id="mssql" class="d-flex justify-content-center align-items-center">
+                            <div class="card text-center">
+                                <img width="150" src="images/logo/database/logo-mssql.png"/>
+                                <div class="card__content">
+                                    <p class="card__title">MsSQL</p>
+                                    <p class="card__description fw-bold">30%</p>
+                                    <p class="card__quote">"This one transforms data into valuable insights, just like an expert detective!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Card content 1 End -->
+                <!-- Card content 2 Start -->
+           <div class="carousel-item">
+            <div id="mysql" class="d-flex justify-content-center align-items-center">
+              <div class="card text-center">
+                  <img width="150" src="images/logo/database/logo-mysql.png"/>
+                  <div class="card__content">
+                  <p class="card__title">MySQL</p>
+                  <p class="card__description fw-bold">40%</p>
+                  <p class="card__quote">"the librarian of databases, manages information efficiently for countless applications."</p>
+                  </div>
+              </div>
+            </div>
+           </div>
+          <!-- Card content 2 End -->
+            </div>
+                <a class="carousel-control-prev" href="#continuous-slider" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#continuous-slider" role="button" data-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+      </div> 
+      <!-- Skills Database End -->
+      <!-- Skills Mobile App Development Start -->
+      <div id="skills-database" class="col-md-6 py-5">
+        <h2 class="text-light text-center Montserrat-Subrayada">Mobile App Dev</h2>
+        <div id="continuous-slider" class="carousel slide p-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Card content 1 Start -->
+                    <div class="carousel-item active">
+                        <div id="android-studio" class="d-flex justify-content-center align-items-center">
+                            <div class="card text-center">
+                                <img width="150" src="images/logo/mad/logo-android-studio.png"/>
+                                <div class="card__content">
+                                    <p class="card__title">Android Studio</p>
+                                    <p class="card__description fw-bold">50%</p>
+                                    <p class="card__quote">"The artist's canvas for crafting mobile experiences."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Card content 1 End -->
+                <!-- Card content 2 Start -->
+           <div class="carousel-item">
+            <div id="android-java" class="d-flex justify-content-center align-items-center">
+              <div class="card text-center">
+                  <img width="150" src="images/logo/mad/logo-android-java.png"/>
+                  <div class="card__content">
+                  <p class="card__title">Android - Java</p>
+                  <p class="card__description fw-bold">40%</p>
+                  <p class="card__quote">"A dynamic duo. Together, they empower Android Applications."</p>
+                  </div>
+              </div>
+            </div>
+           </div>
+          <!-- Card content 2 End -->
+            </div>
+                <a class="carousel-control-prev" href="#continuous-slider" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#continuous-slider" role="button" data-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+      </div> 
+      <!-- Skills Mobile App Development End -->
+    </div>
+    </section>
+
+  <!-- Certificate Start -->
+  <section id="Certificates" class="container pb-5">
+      <div class="row">
+          <div id="skills-web" class="col-12">
+            <h2 class="text-light text-center Montserrat-Subrayada">Certifications</h2>
+            <div id="continuous-slider" class="carousel slide p-3" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- content 1 Start -->
+                        <div class="carousel-item active">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-1.jpg" alt="Certificate 1" class="w-50 img-fluid">
+                              <!-- class="d-block w-50" -->
+                          </div>
+                        </div>
+                    <!-- content 1 End -->
+                    <!-- content 2 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-2.jpg" alt="Certificate 2" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                    <!-- content 2 End -->
+                    <!-- content 3 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-3.jpg" alt="Certificate 3" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                    <!-- content 3 End -->
+                    <!-- content 4 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-4.jpg" alt="Certificate 4" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 4 End -->
+                  <!-- content 5 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-1.jpg" alt="Certificate 5" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 5 End -->
+                  <!-- content 6 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-2.jpg" alt="Certificate 6" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                    <!-- content 6 End -->
+                    <!-- content 7 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-3.jpg" alt="Certificate 7" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                    <!-- content 7 End -->
+                    <!-- content 8 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-4.jpg" alt="Certificate 8" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 8 End -->
+                  <!-- content 9 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-5.jpg" alt="Certificate 9" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 9 End -->
+                  <!-- content Angular Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-6.jpg" alt="Certificate Angular" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content Angular End -->
+                  <!-- content 10 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-7.jpg" alt="Certificate 10" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                  <!-- content 10 End -->
+                  <!-- content 11 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-8.jpg" alt="Certificate 11" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 11 End -->
+                <!-- content 12 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-9.jpg" alt="Certificate 12" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 12 End -->
+                <!-- content 13 Start -->
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center align-items-center">
+                          <img src="images/certificates/cert-pl-10.jpg" alt="Certificate 13" class="w-50 img-fluid">
+                      </div>
+                    </div>
+                  <!-- content 13 End -->
+                  <!-- content 14 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-11.jpg" alt="Certificate 14" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                  <!-- content 14 End -->
+                  <!-- content 15 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-12.jpg" alt="Certificate 15" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 15 End -->
+                <!-- content 16 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-13.jpg" alt="Certificate 16" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 16 End -->
+                            <!-- content 9 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-14.jpg" alt="Certificate 9" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 16 End -->
+                  <!-- content 17 Start -->
+                        <div class="carousel-item">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <img src="images/certificates/cert-pl-15.jpg" alt="Certificate 17" class="w-50 img-fluid">
+                          </div>
+                        </div>
+                  <!-- content 17 End -->
+                  <!-- content 18 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-16.jpg" alt="Certificate 18" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                  <!-- content 18 End -->
+                  <!-- content 19 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-17.jpg" alt="Certificate 19" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 19 End -->
+                <!-- content 20 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-18.jpg" alt="Certificate 20" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                <!-- content 20 End -->
+                <!-- content 21 Start -->
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center align-items-center">
+                          <img src="images/certificates/cert-pl-19.jpg" alt="Certificate 21" class="w-50 img-fluid">
+                      </div>
+                    </div>
+                  <!-- content 21 End -->
+                  <!-- content 22 Start -->
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="images/certificates/cert-pl-20.jpg" alt="Certificate 22" class="w-50 img-fluid">
+                        </div>
+                      </div>
+                  <!-- content 22 End -->
+                  <!-- content 21 Start -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/certificates/cert-pl-21.jpg" alt="Certificate 21" class="w-50 img-fluid">
+                    </div>
+                  </div>
+                <!-- content 21 End -->
+                <!-- content 22 Start -->
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center align-items-center">
+                          <img src="images/certificates/cert-pl-22.jpg" alt="Certificate 22" class="w-50 img-fluid">
+                      </div>
+                    </div>
+                <!-- content 22 End -->
+              </div>
+                <a class="carousel-control-prev" href="#continuous-slider" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#continuous-slider" role="button" data-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+      </div>
+      <!-- Certificate end -->
+    </section>
+<!-- Certificate End -->
+
+<!-- Contact Start -->
+<section id="contacts" class="container p-3">
+  <div class="row">
+    <!-- Contact Me Start -->
+    <h4 class="text-center mb-3">Message Me</h4>
+      <form>
+          <div class="form-group my-3">
+              <label class="mb-2 text-light">Full Name</label>
+              <input type="text" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+              <label class="mb-2 text-light">Email Address</label>
+              <input type="email" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+              <label class="mb-2 text-light">Message</label>
+              <textarea class="form-control" rows="5"></textarea>
+          </div>
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-block btn-outline-light ">Send</button>
+          </div>
+      </form>
+    <!-- Contact Me End -->
+    <!-- Contact Info Start -->
+    <div id="contact-info" class="col-12 py-5">
+      <div class="parent">
+        <div class="child child-1">
+          <a class="button btn-1" href="https://www.linkedin.com/in/jome-schandler-mendoza-6b2a22260/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
         </div>
-    </section>
-        
-      
-    <!-- Card Skills carousel End -->
-
-    <section id="Certificates">
-
-    </section>
-
-    <section id="contacts" class="">
-        <div id="contact-info">
-            
+        <div class="child child-3">
+          <a class="button btn-3" href="https://github.com/Jome-Schandler" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
         </div>
-    </section>
-
+        <div class="child child-4">
+          <a class="button btn-4" href="https://www.facebook.com/jome.schandler/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" fill="#4267B2"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+        </div>
+        </div>
+    </div>
+    <!-- Contact Info End -->
+  </div>
+</section>
+<!-- Contact End -->
     
-    <footer class="bg-dark text-white d-flex gap-4 justify-content-center p-3">
-        <div>&copy;  2023 Jome Schandler</div>
-        <div>|</div>
-        <div>All rights reserved.</div>
-    </footer>
+  <footer class="bg-dark text-white p-3">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-4">&copy; 2023 Jome Schandler</div>
+        <div class="col-4">|</div>
+        <div class="col-4">All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- JS Bootsrap 5-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <!-- JS Bootstrap 4-->
+  <!-- JS Bootsrap 5-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- JS Bootstrap 4-->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>

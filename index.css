@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;   
     /* font-family: 'Roboto', sans-serif;   */
+    /* font-family: 'Montserrat', sans-serif; */
+    
 }
 /* Background colors */
 .bg-body {
@@ -30,6 +32,10 @@
 
 .montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+
+.Montserrat-Subrayada {
+  font-family: Montserrat Subrayada, sans-serif;
 }
 
 .pixelify {
@@ -227,9 +233,7 @@
 
 /* For tablet view */
 @media (min-width: 768px) and (max-width: 1023px) {
-  #educ-desc {
-      display: none;
-  }
+  
 }
 
 /* For phone view */
@@ -238,16 +242,13 @@
 }
 /* About Education End */
 
-
-
-
 /* CSS for Ministry Page Start***************************************** */
   /* For laptop view */
 
   @media (min-width: 1024px) {
 
     .bg-ministry {
-      min-height: 100vh; /* Set the minimum height for the background */
+      min-height: 75vh; /* Set the minimum height for the background */
       background-color: gray;
       background-image:  url(./images/Mypics/ministry.jpg);
       background-size: 100%;
@@ -258,7 +259,7 @@
     }
 
     .container-bg-ministry {
-      min-height: 100vh; /* Set the minimum height for the container */
+      min-height: 75vh; /* Set the minimum height for the container */
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: var(--bs-border-radius-xl) !important;
     }
@@ -287,16 +288,17 @@
       border-bottom-left-radius: var(--bs-border-radius-xl) !important;
     }
 
-    .text-ministry {
-      font-size: 15px; /* Adjust font size */
-      line-height: 1rem; /* Adjust line height */
+    #ul-ministry {
+      font-size: 20px; /* Adjust font size */
+      line-height: 1.5rem; /* Adjust line height */
     }
+
   }
 
   /* For phone view */
   @media (max-width: 767px) {
     .bg-ministry {
-      min-height: 50vh; /* Adjust the background height as needed */
+      min-height: 25vh; /* Adjust the background height as needed */
       background-size: cover; /* Adjust the background size */
       background-color: gray;
       background-image:  url(./images/Mypics/ministry.jpg);
@@ -305,16 +307,15 @@
     }
 
     .container-bg-ministry {
-      min-height: 50vh; /* Adjust the container height as needed */
+      min-height: 25vh; /* Adjust the container height as needed */
       background-color: rgba(0, 0, 0, 0.5);
       border-bottom-right-radius: var(--bs-border-radius-xl) !important;
       border-bottom-left-radius: var(--bs-border-radius-xl) !important;
     }
-
-    .bg-title {
-      font-size: 2em; /* Adjust font size */
-      line-height: 3.5rem; /* Adjust line height */
+    #ul-ministry {
+      display: none;
     }
+
   }
 /* CSS For Ministry Page End **************************************** */
 
@@ -328,11 +329,15 @@
     text-decoration: none;
 }
 
+/* project start */
+ 
+/* project end */
+
 /* CSS for tools */
 .card {
     position: absolute;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 400px;
     background: linear-gradient(-45deg, #4b5076 0%, #979aac 100% );
     border-radius: 10px;
     display: flex;
@@ -344,7 +349,8 @@
   }
   
   .card img {
-    width: auto;
+    width: 150px;
+    height: 150px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
@@ -397,6 +403,8 @@
     transform: rotate(-45deg);
   }
 
+
+
   /* Tool */
 
 /* Video Container */
@@ -425,6 +433,167 @@
   padding-bottom: 177%;
 }
 
-/* tools / skills carousel Start */
+/* Contact Form Start */
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#b7b5d4, #565865) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
 
-/* tools / skills carousel End */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #686778;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #686778;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+/* Contact Form End */
+
+/* Contact Info Start */
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px #686778;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
+
+/* Contact Info End */
