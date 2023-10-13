@@ -222,6 +222,12 @@
    }
 /* Button to be used end */
 
+/* image logo Start */
+.mylogo {
+  width: fit-content;
+}
+/* image logo End */
+
 /* About Education Start */
  /* For laptop view */
  @media (min-width: 1024px) {
