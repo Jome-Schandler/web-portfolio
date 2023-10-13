@@ -1,6 +1,8 @@
-[
-    {
-      "name": "jome",
-      "link": "https://jome-schandler.github.io/web-portfolio/"
-    }
-]
+{
+  "capstone": {
+      "liveLink": "https://jome-schandler.github.io/web-portfolio/",
+      "name": "Jome",
+      "isMulti": false
+  }
+}
+
